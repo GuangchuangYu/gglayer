@@ -1,12 +1,16 @@
 Package: gglayer
 Title: Provides Extra Layers for 'ggplot2'
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Version: 0.0.1
+Authors@R: c(person(given="Guangchuang", family="Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre")),
+             person(given="David", family="Robinson", email = "drob@datacamp.com", role = "aut")
+           )
 Description: What the package does (one paragraph).
 Depends: R (>= 3.5.0)
 Imports:
-	ggplot2,
-	grid
+	dplyr,
+  ggplot2,
+	grid,
+  magrittr
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true

@@ -20,5 +20,5 @@ ggplot2 layer
 ggplot2 layer of birthday cake
 }
 \author{
-guangchuang yu
+Guangchuang Yu
 }

@@ -22,6 +22,7 @@ ellipseGrob <- function(x, y, a, b, gp=gpar(), vp=NULL) {
     polygonGrob(xx, yy, gp = gp, vp=vp)
 }
 
+##' @author Guangchuang Yu
 ##' @importFrom grid segmentsGrob
 cakeGrob <- function(x=.5, y=.5, a=.4, b=.14, A=.44, B=.17, height=.3, gp=gpar(), vp=NULL) {
     gp2 <- gp
@@ -37,6 +38,7 @@ cakeGrob <- function(x=.5, y=.5, a=.4, b=.14, A=.44, B=.17, height=.3, gp=gpar()
               ellipseGrob(x, y, a, b, gp=gp, vp=vp))
           )
 }
+
 
 ##' @importFrom grid gTree
 cakeCandleGrob <- function(colour.cake = "pink", colour.candle="orange", colour.fire="red", vp=NULL, name=NULL) {
@@ -62,7 +64,7 @@ cakeCandleGrob <- function(colour.cake = "pink", colour.candle="orange", colour.
 ##' @return ggplot2 layer
 ##' @importFrom ggplot2 layer
 ##' @export
-##' @author guangchuang yu
+##' @author Guangchuang Yu
 geom_cake <- function(mapping = NULL, data = NULL, ...) {
     layer(
         data = data,
