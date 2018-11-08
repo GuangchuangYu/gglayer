@@ -11,8 +11,24 @@ source code from <https://gist.githubusercontent.com/benmarwick/2a1bb0133ff568cb
 
 Useful for creating [raincloud plot](https://micahallen.org/2018/03/15/introducing-raincloud-plots/).
 
-Alternatively, you can use [ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html) for the raincloud effect.
+Alternatively, you can use [ggridges](https://CRAN.R-project.org/package=ggridges) for the raincloud effect.
 
 see also <https://peerj.com/preprints/27137v1/>.
 
+
+## geom_ord_ellipse
+
+
+```r
+library(MASS)
+ord <- lda(Species ~ ., iris, prior = rep(1, 3)/3)
+
+## devtools::install_github('fawda123/ggord')
+library(ggord)
+p <- ggord(ord, iris$Species)
+p + geom_ord_ellipse(ellipse_pro=0.99) +
+   geom_ord_ellipse(ellipse_pro=0.9, color='black') 
+```
+
+![](https://user-images.githubusercontent.com/626539/48194813-fc22da00-e388-11e8-82a8-11fadb319e30.png)
 
