@@ -15,6 +15,7 @@ Alternatively, you can use [ggridges](https://CRAN.R-project.org/package=ggridge
 
 see also <https://peerj.com/preprints/27137v1/>.
 
+<https://guangchuangyu.github.io/cn/2018/11/raincloud/>
 
 ## geom_ord_ellipse
 
