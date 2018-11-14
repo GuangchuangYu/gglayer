@@ -22,6 +22,6 @@ see also <https://peerj.com/preprints/27137v1/>.
 
 ## geom_ord_ellipse
 
-![](https://guangchuangyu.github.io/blog_images/R/yyplot/geom_ord_ellipse_files/figure-markdown_strict/unnamed-chunk-1-2.png)
+[![](https://guangchuangyu.github.io/blog_images/R/yyplot/geom_ord_ellipse_files/figure-markdown_strict/unnamed-chunk-1-2.png)](https://guangchuangyu.github.io/cn/2018/01/geom-ord-ellipse/)
 
 <https://guangchuangyu.github.io/cn/2018/01/geom-ord-ellipse/>
