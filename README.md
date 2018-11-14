@@ -15,7 +15,7 @@ Alternatively, you can use [ggridges](https://CRAN.R-project.org/package=ggridge
 
 see also <https://peerj.com/preprints/27137v1/>.
 
-![](https://guangchuangyu.github.io/blog_images/R/gglayer/b5.png)
+[<img src="https://guangchuangyu.github.io/blog_images/R/gglayer/b5.png" width="600" />](https://guangchuangyu.github.io/cn/2018/11/raincloud/)
 
 
 <https://guangchuangyu.github.io/cn/2018/11/raincloud/>
