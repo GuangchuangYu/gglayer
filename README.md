@@ -47,4 +47,5 @@ ggplot(d) + geom_segment_c(aes(x = x, xend = xend, y=y, yend =yend, col0 = v1, c
     theme_minimal() + theme(legend.position=c(.2, .85)) + xlab(NULL) + ylab(NULL)
 ```
 
-![](figures/segment-continuous.png)
+
+[<img src="figures/segment-continuous.png" width="600" />](https://yulab-smu.github.io/treedata-book/chapter4.html#fig:continuousColor)
