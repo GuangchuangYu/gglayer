@@ -41,6 +41,7 @@ geom_segment_c <- function(mapping = NULL, data = NULL,
 
 ##' @importFrom ggplot2 ggplot_add
 ##' @method ggplot_add segmentC
+##' @importFrom ggplot2 aes_string
 ##' @export
 ggplot_add.segmentC <- function(object, plot, object_name) {
     if (object$inherit.aes) {
