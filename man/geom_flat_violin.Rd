@@ -4,9 +4,17 @@
 \alias{geom_flat_violin}
 \title{geom_flat_violin}
 \usage{
-geom_flat_violin(mapping = NULL, data = NULL, stat = "ydensity",
-  position = "dodge", trim = TRUE, scale = "area",
-  show.legend = NA, inherit.aes = TRUE, ...)
+geom_flat_violin(
+  mapping = NULL,
+  data = NULL,
+  stat = "ydensity",
+  position = "dodge",
+  trim = TRUE,
+  scale = "area",
+  show.legend = NA,
+  inherit.aes = TRUE,
+  ...
+)
 }
 \arguments{
 \item{mapping}{aesthetic mapping}

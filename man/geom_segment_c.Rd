@@ -4,9 +4,18 @@
 \alias{geom_segment_c}
 \title{geom_segment_c}
 \usage{
-geom_segment_c(mapping = NULL, data = NULL, position = "identity",
-  lineend = "butt", na.rm = FALSE, show.legend = NA,
-  inherit.aes = TRUE, arrow = NULL, arrow.fill = NULL, ...)
+geom_segment_c(
+  mapping = NULL,
+  data = NULL,
+  position = "identity",
+  lineend = "butt",
+  na.rm = FALSE,
+  show.legend = NA,
+  inherit.aes = TRUE,
+  arrow = NULL,
+  arrow.fill = NULL,
+  ...
+)
 }
 \arguments{
 \item{mapping}{aes mapping}

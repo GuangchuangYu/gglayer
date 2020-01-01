@@ -28,24 +28,14 @@ triangleGrob <- function(fill="red",col=NULL,slash="up",alpha=NULL, vp=NULL, nam
 ##' @importFrom ggplot2 layer
 ##' @export
 ##' @author Shipeng Guo
-geom_triangle <- function(mapping = NULL, data = NULL,
-                          stat = "identity", position = "identity",
-                          ...,
-                          na.rm = FALSE,
-                          show.legend = NA,
-                          inherit.aes = TRUE) {
+geom_triangle <- function(mapping = NULL, data = NULL, ...) {
   layer(
     data = data,
     mapping = mapping,
-    stat = stat,
+    stat = "identity",
     geom = GeomTriangle,
-    position = position,
-    show.legend = show.legend,
-    inherit.aes = inherit.aes,
-    params = list(
-      na.rm = na.rm,
-      ...
-    )
+    position = "identity",
+    params = list(...)
   )
 }
 
@@ -54,7 +44,7 @@ geom_triangle <- function(mapping = NULL, data = NULL,
 ##' @importFrom ggplot2 Geom
 ##' @importFrom ggplot2 draw_key_blank
 ##' @importFrom ggplot2 aes
-GeomTriangle <- ggproto("GeomHeart", Geom,
+GeomTriangle <- ggproto("GeomTriangle", Geom,
                         draw_panel = function(data, panel_params, coord,slash="up") {
                           data <- coord$transform(data, panel_params)
                           data$size <- data$size/100
