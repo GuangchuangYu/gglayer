@@ -2,8 +2,7 @@ Package: gglayer
 Title: Provides Extra Layers for 'ggplot2'
 Version: 0.0.1
 Authors@R: c(person(given="Guangchuang", family="Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre")),
-             person(given="Shipeng", family ="Guo", role="ctb"),
-             person(given="David", family="Robinson", email = "drob@datacamp.com", role = "aut")
+             person(given="Shipeng", family ="Guo", role="ctb")
            )
 Description: What the package does (one paragraph).
 Depends: R (>= 3.5.0)
