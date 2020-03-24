@@ -89,7 +89,7 @@ StatSegmentC <- ggproto("StatSegmentC", Stat,
                         )
 
 
-setup_data_continuous_color <- getFromNamespace("setup_data_continuous_color", "ggtree")
+
 
 
 setup_data_continuous_color_df <- function(df, nsplit = 100, extend = 0.002, pool = FALSE) {
@@ -122,3 +122,49 @@ setup_data_continuous_color_df <- function(df, nsplit = 100, extend = 0.002, poo
         return(res)
     }) %>% do.call('rbind', .)
 }
+
+
+## setup_data_continuous_color <- getFromNamespace("setup_data_continuous_color", "ggtree")
+
+
+setup_data_continuous_color <- function(x, xend, y, yend, col, col2,
+                                        xrange = NULL, nsplit = 100, extend = 0.002) {
+    if (is.null(xrange))
+        xrange <- c(x, xend)
+
+    ## xstep <- diff(xrange)/nsplit
+    ## xn <- floor((xend - x)/xstep)
+    xn <- floor((xend - x) * nsplit /diff(xrange))
+    ## slope <- (yend - y)/(xend - x)
+    ydiff <- yend - y
+    xdiff <- xend - x
+
+    if (xn > 0) {
+        ## x <- x + 0:xn * xstep
+        x <- x + 0:xn * diff(xrange) / nsplit 
+        tmp <- x[-1] * (1 + extend)
+        tmp[tmp > xend] <- xend
+        xend <- c(tmp, xend)
+        ## y <- y + 0:xn * xstep * slope
+        y <- y + 0:xn * diff(xrange) * ydiff / (nsplit * xdiff)
+        ## yend <- y + (xend - x) * slope
+        yend <- y + (xend - x) * ydiff / xdiff 
+    }
+
+    n <- length(x)
+    if (is.numeric(col) && is.numeric(col2)) {
+        colour <- seq(col, col2, length.out = n)
+    } else if (is.character(col) && is.character(col2)) {
+        colour <- grDevices::colorRampPalette(c(col, col2))(n)
+    } else {
+        stop("col and col2 should be both numeric or character..." )
+    }
+
+    data.frame(x = x,
+               xend = xend,
+               y = y,
+               yend = yend,
+               colour = colour)
+}
+
+

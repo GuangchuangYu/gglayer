@@ -12,7 +12,7 @@
 ##' @importFrom utils modifyList
 ##' @export
 ##' @author Guangchuang Yu
-##' @references \url{http://lchblogs.netlify.com/post/2017-12-22-r-addconfellipselda/}
+## @references \url{https://lchblogs.netlify.com/post/2017-12-22-r-addconfellipselda/}
 geom_ord_ellipse <- function(mapping = NULL, ellipse_pro = 0.97, fill = NA, ...) {
     default_aes <- aes_(color = ~Groups, group = ~Groups)
     if (is.null(mapping)) {

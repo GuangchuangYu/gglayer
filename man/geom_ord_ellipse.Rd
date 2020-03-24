@@ -21,9 +21,6 @@ ggplot layer
 \description{
 add confidence ellipse to ordinary plot produced by ggord
 }
-\references{
-\url{http://lchblogs.netlify.com/post/2017-12-22-r-addconfellipselda/}
-}
 \author{
 Guangchuang Yu
 }

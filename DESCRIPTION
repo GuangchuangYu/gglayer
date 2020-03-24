@@ -1,16 +1,15 @@
 Package: gglayer
-Title: Provides Extra Layers for 'ggplot2'
+Title: Extra Layers for 'ggplot2'
 Version: 0.0.1
 Authors@R: c(person(given="Guangchuang", family="Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre")),
              person(given="Shipeng", family ="Guo", role="ctb")
            )
-Description: What the package does (one paragraph).
+Description: Implements several extra layers for the 'ggplot2' graphic system.
 Depends: R (>= 3.5.0)
 Imports:
 	dplyr,
   grDevices,
   ggplot2,
-  ggtree,
 	grid,
   magrittr,
   plyr,
