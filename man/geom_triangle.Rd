@@ -19,6 +19,10 @@ ggplot2 layer
 \description{
 ggplot2 layer of triangle
 }
+\examples{
+library(ggplot2)
+ggplot(mtcars, aes(mpg, disp)) + geom_triangle()
+}
 \author{
 Shipeng Guo
 }

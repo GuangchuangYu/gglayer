@@ -1,7 +1,7 @@
 ##' add confidence ellipse to ordinary plot produced by ggord
 ##'
 ##' 
-##' @title geom_ord_ellipse 
+##' @title add confidence ellipse to ordinary plot
 ##' @param mapping aes mapping 
 ##' @param ellipse_pro confidence value for the ellipse
 ##' @param fill color to fill the ellipse, NA by default
@@ -62,7 +62,9 @@ StatOrdEllipse <- ggproto("StatOrdEllipse", Stat,
                           )
 
 
+globalVariables('.')
+
 ## . function was from plyr package
-. <- function (..., .env = parent.frame()) {
-    structure(as.list(match.call()[-1]), env = .env, class = "quoted")
-}
+## . <- function (..., .env = parent.frame()) {
+##    structure(as.list(match.call()[-1]), env = .env, class = "quoted")
+##}
