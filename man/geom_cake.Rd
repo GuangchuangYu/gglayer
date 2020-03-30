@@ -21,6 +21,8 @@ ggplot2 layer of birthday cake
 }
 \examples{
 library(ggplot2)
+ggplot(mtcars, aes(mpg, disp)) + geom_cake()
+library(ggplot2)
 library(gglayer)
 ggplot(mtcars, aes(mpg, disp)) + geom_cake()
 }

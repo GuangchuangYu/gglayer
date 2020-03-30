@@ -2,7 +2,7 @@
 % Please edit documentation in R/geom_ord_ellipse.R
 \name{geom_ord_ellipse}
 \alias{geom_ord_ellipse}
-\title{geom_ord_ellipse}
+\title{add confidence ellipse to ordinary plot}
 \usage{
 geom_ord_ellipse(mapping = NULL, ellipse_pro = 0.97, fill = NA, ...)
 }

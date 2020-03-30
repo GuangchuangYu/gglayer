@@ -27,6 +27,9 @@ triangleGrob <- function(fill="red",col=NULL,slash="up",alpha=NULL, vp=NULL, nam
 ##' @return ggplot2 layer
 ##' @importFrom ggplot2 layer
 ##' @export
+##' @examples 
+##' library(ggplot2)
+##' ggplot(mtcars, aes(mpg, disp)) + geom_triangle()
 ##' @author Shipeng Guo
 geom_triangle <- function(mapping = NULL, data = NULL, ...) {
   layer(
