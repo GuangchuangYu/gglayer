@@ -19,6 +19,11 @@ ggplot2 layer
 \description{
 ggplot2 layer of birthday cake
 }
+\examples{
+library(ggplot2)
+library(gglayer)
+ggplot(mtcars, aes(mpg, disp)) + geom_cake()
+}
 \author{
 Guangchuang Yu
 }

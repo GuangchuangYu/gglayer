@@ -65,6 +65,10 @@ cakeCandleGrob <- function(colour.cake = "pink", colour.candle="orange", colour.
 ##' @importFrom ggplot2 layer
 ##' @export
 ##' @author Guangchuang Yu
+##' @examples
+##' library(ggplot2)
+##' library(gglayer)
+##' ggplot(mtcars, aes(mpg, disp)) + geom_cake()
 geom_cake <- function(mapping = NULL, data = NULL, ...) {
     layer(
         data = data,
