@@ -12,6 +12,16 @@
 ##' @importFrom utils modifyList
 ##' @export
 ##' @author Guangchuang Yu
+##' @examples
+##' \dontrun{
+##' library(MASS)
+##' ord <- lda(Species ~ ., iris, prior = rep(1, 3)/3)
+##' ## devtools::install_github('fawda123/ggord')
+##' library(ggord)
+##' p <- ggord(ord, iris$Species)
+##' p + geom_ord_ellipse(ellipse_pro = .96, color='firebrick', size=1, lty=3) +
+##' geom_ord_ellipse(ellipse_pro = .99, lty=2)
+##' }
 ## @references \url{https://lchblogs.netlify.com/post/2017-12-22-r-addconfellipselda/}
 geom_ord_ellipse <- function(mapping = NULL, ellipse_pro = 0.97, fill = NA, ...) {
     default_aes <- aes_(color = ~Groups, group = ~Groups)

@@ -21,6 +21,17 @@ ggplot layer
 \description{
 add confidence ellipse to ordinary plot produced by ggord
 }
+\examples{
+\dontrun{
+library(MASS)
+ord <- lda(Species ~ ., iris, prior = rep(1, 3)/3)
+## devtools::install_github('fawda123/ggord')
+library(ggord)
+p <- ggord(ord, iris$Species)
+p + geom_ord_ellipse(ellipse_pro = .96, color='firebrick', size=1, lty=3) +
+geom_ord_ellipse(ellipse_pro = .99, lty=2)
+}
+}
 \author{
 Guangchuang Yu
 }

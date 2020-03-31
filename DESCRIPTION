@@ -1,13 +1,13 @@
 Package: gglayer
 Title: Extra Layers for 'ggplot2'
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: c(person(given="Guangchuang", family="Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre")),
              person(given="Shipeng", family ="Guo", role="ctb")
            )
 Description: Implements several extra layers for the 'ggplot2' graphic system, 
-  including geom_cake (uses birthday cake as symbolic point), geom_triangle (uses triangle as symbolic point), 
-  geom_segment_c (allows continuous color mapping for line segment) and 
-  geom_ord_ellipse (adds confidence ellipse to ordinary plot produced by ggord()).
+  including geom_cake() (uses birthday cake as symbolic point), geom_triangle() (uses triangle as symbolic point), 
+  geom_segment_c() (allows continuous color mapping for line segment) and 
+  geom_ord_ellipse() (adds confidence ellipse to ordinary plot produced by ggord()).
 Depends: R (>= 3.5.0)
 Imports:
 	dplyr,

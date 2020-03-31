@@ -17,6 +17,19 @@
 ##' @seealso
 ##' \link[ggplot2]{geom_segment}
 ##' @return add segment layer
+##' @examples
+##' set.seed(2019-06-28)
+##' d = data.frame(x = rnorm(10),
+##'               xend = rnorm(10),
+##'               y = rnorm(10),
+##'               yend = rnorm(10),
+##'               v1 = rnorm(10),
+##'               v2 = rnorm(10))
+##' library(ggplot2)
+##' library(gglayer)
+##' ggplot(d) + geom_segment_c(aes(x = x, xend = xend, y=y, yend =yend, col0 = v1, col1 = v2)) +
+##'    scale_color_viridis_c(name = "continuous colored lines") + 
+##'    theme_minimal() + theme(legend.position=c(.2, .85)) + xlab(NULL) + ylab(NULL)
 ##' @author Guangchuang Yu
 geom_segment_c <- function(mapping = NULL, data = NULL, 
                            position = 'identity', lineend = "butt",
